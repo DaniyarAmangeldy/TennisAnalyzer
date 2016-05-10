@@ -1,6 +1,10 @@
 #usr/
-import urllib.request
 from bs4 import BeautifulSoup
+import numpy as np
+
+
+
+
 def get_html(url):
 	response = urllib.request.urlopen(url)
 	return response.read()
